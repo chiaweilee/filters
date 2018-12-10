@@ -6,4 +6,5 @@ const test = (plugin, argv, result) => it(`${plugin}`, () => {
 
 describe('filters', () => {
   test('capitalize', [ 'hello world!' ], 'Hello world!')
+  test('percentage', [ '0.251' /* should render correctly when input is a string of number */ ], '25%')
 })
