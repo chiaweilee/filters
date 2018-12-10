@@ -1,6 +1,6 @@
 {
   "name": "@chiaweilee/filters",
-  "version": "0.0.0-beta.1",
+  "version": "0.0.1",
   "private": false,
   "main": "lib/install.js",
   "module": "src/install.js",
