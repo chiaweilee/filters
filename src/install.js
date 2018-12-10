@@ -5,7 +5,11 @@ export default {
     if (option instanceof Array) {
       option.forEach(name => {
         const filter = require(`./${name}`)
-        assert(typeof filter === 'function', `unexpected filter of '${name}'`)
+        if (typeof filter === 'function') {
+          Vue.filter(name, filter)
+        } else {
+          assert(false, `unexpected filter of '${name}'`)
+        }
       })
     } else {
       const filters = require('./index')
