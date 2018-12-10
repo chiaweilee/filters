@@ -1,4 +1,7 @@
 # filters
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/chiaweilee/filters.svg)](https://greenkeeper.io/)
+
 collection of Vue filters
 
 ## Install
