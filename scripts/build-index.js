@@ -10,6 +10,6 @@ plugins.forEach((name, i) => {
   }
 })
 
-output += '}'
+output += `}\n`
 
 fs.writeFileSync(path.resolve('./src/index.js'), output)
